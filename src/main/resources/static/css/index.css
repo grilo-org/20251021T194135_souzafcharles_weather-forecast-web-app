@@ -1,0 +1,68 @@
+body {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url('/images/background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #f8f9fa;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ----- Card styling ----- */
+.card {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);
+}
+
+/* ----- Card content ----- */
+.card-title {
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+}
+
+.form-control {
+    background: rgba(255, 255, 255, 0.85);
+    border: none;
+    border-radius: 6px;
+    color: #333;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    background: #ffffff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+/* ----- Button styling ----- */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* ----- Spacing utilities ----- */
+.container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
